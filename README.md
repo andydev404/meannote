@@ -1,6 +1,9 @@
 # Meannote
 
 This project was created by Andy Santana
+1 - `git clone https://github.com/andyfrontend/meannote.git`
+2 - `cd meannote`
+3 - `npm install`
 
 ## Development server
 
