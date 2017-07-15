@@ -1,0 +1,19 @@
+
+.new-input, .btn-submit{
+    background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    color: #fff;
+    border:none;
+    border-radius: 30px;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.new-input:hover, .btn-submit:hover{
+    background: linear-gradient(to left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+.new-input:focus{
+    outline: none
+}
+

@@ -1,0 +1,20 @@
+<div class="row justify-content-center animated fadeInUp">
+  <div class="col-md-5">
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <h4 class="default-tittle">{{noteContent.name}}</h4>
+        </div>
+        <div class="col-md-4 text-right">
+          <button type="button" (click)="goUpdate(noteContent._id)" class="new-input"><img width="17" src="assets/img/edit.svg" alt=""> Update note</button>
+        </div>
+        <div class="col-md-4 text-right">
+          <button type="button" (click)="removeNote(noteContent._id)" class="new-input"><img width="17" src="assets/img/plus-symbol.svg" alt=""> Remove note</button>
+        </div>
+      </div>
+      <hr>
+      <br>
+      <div class="content-note">
+        {{noteContent.description}}
+      </div>
+  </div>
+</div>

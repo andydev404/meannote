@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body{
+    background: #F6F6F9;
+    font-family: 'Roboto', sans-serif;
+    overflow-X: hidden;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.custom-control-input:checked~.custom-control-indicator,.custom-control-input:active~.custom-control-indicator {
+    background-color: #f87d95 !important;
+}
+
+.custom-control-input:focus~.custom-control-indicator {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #f87d95 !important;
+}
+
+.default-tittle{
+    color: #b1b0b0;
+    font-weight: 300
+}

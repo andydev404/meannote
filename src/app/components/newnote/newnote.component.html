@@ -1,0 +1,27 @@
+<div class="row justify-content-center animated fadeInUp">
+  <div class="col-md-5">
+    <form novalidate [formGroup]="formNote" (ngSubmit)="saveNote(formNote)">
+      <h4 class="default-tittle">Add New Note</h4>
+      <hr>
+      <div class="form-group" [ngClass]="{'has-danger':formNote.controls.name.invalid && formNote.controls.name.touched}">
+        <label>Note name (*)</label>
+        <input type="text" class="form-control" formControlName="name" placeholder="Enter note name">
+        <small class="form-text text-muted" *ngIf="formNote.controls.name.invalid && formNote.controls.name.touched">You must include a name</small>
+      </div>
+      <br><br>
+      <h4 class="default-tittle">Note Content</h4>
+      <hr>
+      <div class="form-group" [ngClass]="{'has-danger':formNote.controls.description.invalid && formNote.controls.description.touched}">
+        <label>Note content (*)</label>
+        <textarea class="form-control" formControlName="description" placeholder="Enter note content" rows="5"></textarea>
+        <small class="form-text text-muted" *ngIf="formNote.controls.description.invalid && formNote.controls.description.touched">You must include a content</small>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12 text-right">
+          <button type="submit" [disabled]="formNote.invalid" class="btn-submit"><img width="20" src="assets/img/edit.svg" alt=""> Save note</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

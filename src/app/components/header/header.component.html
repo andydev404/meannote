@@ -1,0 +1,17 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-header bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand animated fadeInLeft" [routerLink]="['']">MeanNote - Andy Santana</a>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto"> </ul>
+    <span class="navbar-text ">
+      <a [hidden]="showArrow" class="add-task animated fadeInRight" [routerLink]="['/note','new']">
+        <span>Add new note</span>
+      </a>
+      <a [hidden]="!showArrow" class="add-task animated fadeInRight">
+        <img src="assets/img/left-arrow.svg" width="22" alt="" [routerLink]="['']">
+      </a>
+    </span>
+  </div>
+</nav>

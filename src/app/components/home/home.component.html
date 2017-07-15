@@ -1,0 +1,12 @@
+
+<h4 class="week animated fadeInDown">Note List</h4>
+    <hr>
+  <div class="row">
+    <div class="col-md-3 animated fadeInLeft" (click)="goView(note._id)" *ngFor="let note of notes">
+      <div class="task-content">
+        <h5>{{note.name}}</h5>
+        <p>{{note.description | excerpt:30}}</p>
+        <img src="assets/img/clock.svg" alt="">
+      </div>
+    </div>
+  </div>

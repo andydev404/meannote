@@ -1,0 +1,20 @@
+.navbar-brand{
+    margin-top: -5px;
+}
+
+.bg-header{
+  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  margin-bottom: 40px;
+}
+
+.add-task{
+    display: inline-block;
+    background: #fff;
+    border-radius: 30px;
+    cursor :pointer;
+    padding: 7px 15px;
+    color:#f9748f !important;
+    -webkit-box-shadow: -5px 24px 67px -15px rgba(255,255,255,1);
+-moz-box-shadow: -5px 24px 67px -15px rgba(255,255,255,1);
+box-shadow: -5px 24px 67px -15px rgba(255,255,255,1);
+}
