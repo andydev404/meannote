@@ -2,6 +2,8 @@
 
 This project was created by Andy Santana
 
+[DEMO APP](http://gentle-gorge-15671.herokuapp.com/)
+
 1. `git clone https://github.com/andyfrontend/meannote.git`
 2. `cd meannote`
 3. `npm install`
